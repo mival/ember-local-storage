@@ -1,6 +1,7 @@
 import Ember from 'ember';
 import DS from 'ember-data';
 import ImportExportMixin from '../mixins/adapters/import-export';
+import Inflector from 'ember-inflector';
 
 const keys = Object.keys || Ember.keys;
 
@@ -12,7 +13,6 @@ const {
   get,
   RSVP,
   run,
-  Inflector,
   typeOf,
   isEmpty,
   computed
